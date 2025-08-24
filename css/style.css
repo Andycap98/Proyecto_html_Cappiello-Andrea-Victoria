@@ -7,16 +7,16 @@
 
 /* Estilo general */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Dancing Script', cursive;
+    
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background-color: #f5f1f1;
     color: #333;
 }
 
 /* Header */
 header {
-    background: #6f4e37; /* marrón café */
-    color: white;
+    background: #614613; 
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -24,8 +24,9 @@ header {
 }
 
 header img {
-    height: 200px; /* logo más grande */
+    height: 300px; /* logo más grande */
     width: auto;
+    display: grid;
 }
 
 nav ul {
@@ -49,10 +50,10 @@ nav ul li a:hover {
 
 /* Secciones */
 section {
-    display: flex;
     padding: 40px 20px;
     text-align: center;
 }
+
 
 /* Productos */
 .producto {
@@ -62,12 +63,13 @@ section {
     gap: 5 px;
 }
 
-#productos img {
-    width: 20px;   /* más chicas */
-    height: auto;   /* mantiene proporción */
+#PRODUCTOS img {
+    width: 150px;       /* tamaño de cada imagen */
+    height: 150px;
+    object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
+    margin-bottom: 10px;
+    display: flex;
 }
 
 #productos img:hover {
