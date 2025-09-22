@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-    background: #614613; 
+    background: hsl(25, 85%, 61%); 
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -83,10 +83,28 @@ section {
     border-radius: 10px;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
 }
+.texto-contactenos {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #243b53;
+    margin-bottom: 20px;
+}
+.footer {
+    /* Usa grid para organizar las columnas del footer */
+    display: grid;
+    /* Define 5 columnas de igual ancho */
+    grid-template-columns: repeat(5, 1fr); 
+    /* Añade un espacio de 20px entre las columnas */
+    gap: 20px;
+}
 
+.footer-columna {
+    /* Alinea el texto al centro en cada columna */
+    text-align: center;
+}
 /* Footer */
 footer {
-    background: #6f4e37;
+    background: hsl(25, 85%, 61%);
     color: white;
     text-align: center;
     padding: 15px;
@@ -151,3 +169,4 @@ h2 { text-align: center; margin: 20px 0; }
     font-weight: bold;
     color: #b12704;
 }
+

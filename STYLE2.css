@@ -199,3 +199,46 @@ body {
   .handle { right: -36px; width: 82px; height: 74px; }
   .steam { width: 150px; }
 }
+body {
+  background: #8ed1c7; /* fondo celeste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.drop {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 50% 0 50%; /* forma de gota */
+  position: absolute;
+  opacity: 0.9; /* deja ver la superposición */
+}
+
+/* Gota roja arriba */
+.red {
+  background: red;
+  top: 0;
+  left: 100px;
+}
+
+/* Gota verde en el medio */
+.green {
+  background: green;
+  top: 75px;
+  left: 50px;
+}
+
+/* Gota violeta abajo */
+.purple {
+  background: indigo;
+  top: 150px;
+  left: 0;
+}
