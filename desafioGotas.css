@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd970;
+    position: relative;
+}
+
+/* Botón volver */
+.volver {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 16px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.volver:hover {
+    background-color: #f0f0f0;
+}
+
+/* Gotas centradas oblicuas */
+.forma1, .forma2, .forma3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+/* Gota superior inclinada */
+.forma1 {
+    background-color: #a67c52; /* marrón claro */
+    border-radius: 50% 60% 40% 50%;
+    transform: rotate(30deg) translateY(-60px);
+}
+
+/* Gota media inclinada */
+.forma2 {
+    background-color: #654321; /* marrón oscuro */
+    border-radius: 50% 60% 40% 50%;
+    transform: rotate(30deg);
+}
+
+
+/* Gota inferior inclinada con colita más puntiaguda y hacia la izquierda */
+.forma3 {
+    background-color: #a67c52; /* marrón claro */
+    width: 150px;
+    height: 150px;
+    /* Forma ovalada con colita más marcada */
+    border-radius: 50% 55% 35% 60%; 
+    /* Inclinada y ligeramente más abajo y a la izquierda */
+    transform: rotate(30deg) translateY(80px) translateX(-10px);
+}

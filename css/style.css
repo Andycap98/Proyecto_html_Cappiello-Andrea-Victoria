@@ -170,3 +170,17 @@ h2 { text-align: center; margin: 20px 0; }
     color: #b12704;
 }
 
+/* Personaliza todos los select de la página */
+select {
+  -webkit-appearance: none; /* Chrome, Safari */
+  -moz-appearance: none;    /* Firefox */
+  appearance: none;         /* estándar */
+  background-image: url('img/icono.png'); /* tu ícono de café */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 40px; /* deja espacio para el ícono */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 36px;
+  font-size: 16px;
+}

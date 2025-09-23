@@ -1,0 +1,75 @@
+/* responsive.css */
+
+/* --- Tablets --- */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column; /* si usás flex */
+    align-items: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* --- Celulares --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    display: none; /* si querés un menú hamburguesa después */
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%; /* si tenés productos o secciones en cards */
+    margin-bottom: 20px;
+  }
+}
+
+/* --- Opcional: celulares muy pequeños --- */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  
+  header h1 {
+    font-size: 18px;
+  }
+}

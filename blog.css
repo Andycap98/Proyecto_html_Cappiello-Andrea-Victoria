@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: #f5f1f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: hsl(25, 85%, 61%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+/* Main */
+main {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Tarjetas de artículo */
+.blog-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.blog-card h2 {
+  color: #8b4513;
+  margin-bottom: 10px;
+}
+
+.blog-card p {
+  margin-bottom: 15px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: white;
+  background-color: hsl(25, 85%, 61%);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  background-color: #e6954d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: hsl(25, 85%, 61%);
+  color: white;
+  margin-top: 40px;
+}

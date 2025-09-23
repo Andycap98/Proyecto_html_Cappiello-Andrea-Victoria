@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f1f1;
+    padding: 40px;
+}
+
+.opciones-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.pago-btn {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.pago-btn:hover {
+    transform: scale(1.05);
+}
+
+.efectivo { background-color: #4CAF50; }      /* verde */
+.credito { background-color: #2196F3; }       /* azul */
+.debito { background-color: #f44336; }        /* rojo */
+.mercado { background-color: #FF9800; }       /* naranja */
+.transferencia { background-color: #9C27B0; } /* morado */
